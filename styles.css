@@ -514,3 +514,328 @@ color: #333;
     background-color: #333;
     color: #fff;
   }
+
+  body {
+    font-family: Helvetica;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .site-header { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-identity h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+  }
+
+  .site-navigation ul, .site-navigation li {
+    margin: 0; 
+    padding: 0;
+  }
+
+  .site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+  }
+
+  .site-navigation .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .site-navigation .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .site-navigation .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .site-navigation .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .site-navigation .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all .25s;
+  }
+
+  .footer-distributed .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  .footer-distributed p.footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+      text-align: center;
+    }
+
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+
+
+section.hero {
+    text-align: center;
+    padding: 4em 2em;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./hero-music.jpg');
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .button-primary {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-primary:hover {
+    background-color: #45a049;
+  }
+
+  section.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3em 0;
+    background-color: #fff;
+  }
+
+  .album-card {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .album-card:hover {
+    transform: scale(1.05);
+  }
+
+  .album-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #4CAF50;
+  }
+
+  .album-info {
+    padding: 15px;
+  }
+
+  .album-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .album-artist {
+    font-size: 1em;
+    color: #777;
+  }
+
+  section.featured-artists {
+background-color: #f8f8f8;
+padding: 40px 0;
+text-align: center;
+}
+
+.section-title {
+margin-bottom: 30px;
+}
+
+.artist-card {
+margin-bottom: 20px;
+}
+
+.artist-card img {
+width: 100%;
+max-height: 200px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.artist-info {
+padding: 15px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.artist-name {
+margin: 10px 0;
+font-size: 18px;
+}
+
+.artist-genre {
+color: #888;
+}
+
+/* Popular Playlists Section */
+section.popular-playlists {
+padding: 40px 0;
+text-align: center;
+}
+
+.playlist-card {
+margin-bottom: 20px;
+}
+
+.playlist-card img {
+width: 100%;
+max-height: 200px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.playlist-info {
+padding: 15px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-title {
+margin: 10px 0;
+font-size: 18px;
+}
+
+.playlist-owner {
+color: #888;
+}
+
+/* Subscription Section */
+section.subscription {
+background-color: #333;
+color: #fff;
+padding: 40px 0;
+text-align: center;
+}
+
+.subscription-form {
+margin-top: 20px;
+}
+
+.subscription-form input {
+padding: 10px;
+width: 250px;
+border: none;
+border-radius: 4px;
+}
+
+.subscription-form button {
+padding: 10px 20px;
+background-color: #ff3366;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+background-color: #cc0044;
+}
