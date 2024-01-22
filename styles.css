@@ -220,3 +220,297 @@ section.celebrities {
     height: auto;
     border-radius: 8px;
   }
+
+
+  body {
+    font-family: Helvetica;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .site-header { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-identity h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+  }
+
+  .site-navigation ul, .site-navigation li {
+    margin: 0; 
+    padding: 0;
+  }
+
+  .site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+  }
+
+  .site-navigation .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .site-navigation .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .site-navigation .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .site-navigation .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .site-navigation .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+
+  .footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all .25s;
+  }
+
+  .footer-distributed .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  .footer-distributed p.footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+      text-align: center;
+    }
+
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+
+
+section.hero {
+    text-align: center;
+    padding: 4em 2em;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./hero-image.jpg');
+    background-size: cover;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .button-primary {
+    background-color: #3498db;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-primary:hover {
+    background-color: #2980b9;
+  }
+
+  section.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3em 0;
+  }
+
+  .movie-card {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #3498db;
+  }
+
+  .movie-info {
+    padding: 15px;
+  }
+
+  .movie-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .movie-description {
+    font-size: 1em;
+    color: #666;
+  }
+
+  section.newsletter {
+text-align: center;
+background-color: #f9f9f9;
+padding: 50px 0;
+}
+
+.subscribe-form {
+max-width: 400px;
+margin: 0 auto;
+}
+
+.subscribe-form input {
+width: 70%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ddd;
+border-radius: 5px 0 0 5px;
+}
+
+.subscribe-form button {
+width: 30%;
+background-color: #333;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.subscribe-form button:hover {
+background-color: #fff;
+color: #333;
+}
+
+  /* Contact Section */
+  section.contact {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .contact-form button:hover {
+    background-color: #333;
+    color: #fff;
+  }
